@@ -1,0 +1,68 @@
+{
+  "platform": "other",
+  "profile": {
+    "name": "General Research Radar",
+    "fields": [
+      "artificial intelligence",
+      "computational science"
+    ],
+    "keywords": [
+      "large language model",
+      "scientific discovery",
+      "optimization"
+    ],
+    "negativeKeywords": [
+      "survey only",
+      "tutorial"
+    ],
+    "authors": [
+      {
+        "name": "Example Author",
+        "openalexId": ""
+      }
+    ],
+    "venues": [
+      "Nature",
+      "Science",
+      "Cell",
+      "IEEE Transactions"
+    ],
+    "arxivCategories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "repositoryKeywords": [
+      "scientific machine learning",
+      "benchmark"
+    ]
+  },
+  "schedule": {
+    "frequency": "weekly",
+    "deliveryTime": "09:00",
+    "timezone": "Asia/Tokyo",
+    "weeklyDay": "monday"
+  },
+  "sources": {
+    "arxiv": true,
+    "crossref": true,
+    "openalex": true,
+    "semanticScholar": false,
+    "github": false,
+    "lookbackDays": 7,
+    "maxItemsPerSource": 20
+  },
+  "output": {
+    "language": "zh",
+    "style": "editorial_brief",
+    "depth": "medium",
+    "includePaperTriage": true,
+    "includeBackgroundNotes": true,
+    "includeActionSuggestions": true
+  },
+  "delivery": {
+    "method": "stdout",
+    "email": "you@example.com",
+    "chatId": ""
+  },
+  "onboardingComplete": false
+}
