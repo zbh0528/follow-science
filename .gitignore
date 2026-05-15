@@ -1,0 +1,14 @@
+node_modules/
+scripts/node_modules/
+.env
+*.log
+.DS_Store
+
+# Local runtime configuration and secrets
+config.json
+.follow-science/
+
+# Generated feeds and local outputs
+feed-science.json
+digest.txt
+tmp/
