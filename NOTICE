@@ -1,0 +1,12 @@
+follow-science is structurally inspired by:
+
+  zarazhangrui/follow-builders
+  https://github.com/zarazhangrui/follow-builders
+
+follow-science is a new skill focused on configurable scientific research
+signals rather than AI builder social/media updates. It uses public scholarly
+metadata sources and user-provided profiles to prepare evidence for an AI agent
+to write an editorial-style research brief.
+
+Do not commit runtime secrets, personal email addresses, local profiles, or
+private research notes.
