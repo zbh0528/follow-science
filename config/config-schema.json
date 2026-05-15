@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "User configuration for follow-science. Stored at ~/.follow-science/config.json",
+  "type": "object",
+  "properties": {
+    "profile": {
+      "type": "object",
+      "description": "Research profile used to collect and interpret sources"
+    },
+    "sources": {
+      "type": "object",
+      "description": "Enabled public metadata sources and fetch limits"
+    },
+    "output": {
+      "type": "object",
+      "description": "Digest language, style, depth, and sections"
+    },
+    "delivery": {
+      "type": "object",
+      "description": "stdout, email, or Telegram delivery"
+    }
+  }
+}
