@@ -1,0 +1,13 @@
+{
+  "name": "follow-science-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for follow-science feed preparation and delivery",
+  "type": "module",
+  "scripts": {
+    "prepare-digest": "node prepare-digest.js",
+    "check": "node --check prepare-digest.js && node --check deliver.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0"
+  }
+}
