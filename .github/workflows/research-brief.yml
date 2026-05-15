@@ -1,0 +1,35 @@
+name: Research Signal Brief
+
+on:
+  schedule:
+    # Weekly Monday 00:00 UTC. Adjust for your timezone.
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm --prefix scripts install
+
+      - name: Prepare public scholarly feed
+        run: npm --prefix scripts run prepare-digest > feed-science.json
+
+      # This workflow is a template. Add your model invocation here if you want
+      # cloud delivery while your local computer is off.
+      #
+      # Required secrets for a full cloud run:
+      # - OPENAI_API_KEY, or another model provider key
+      # - RESEND_API_KEY, if email delivery is enabled
+      #
+      # Keep config and secrets out of git.
